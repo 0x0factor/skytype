@@ -1,0 +1,115 @@
+/************
+* rotateOut *
+*************/
+
+.rotateOut-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( center center );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 200deg );
+    .transform-origin( center center );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes rotateOut {
+  .rotateOut-frames;
+}
+
+@keyframes rotateOut {
+  .rotateOut-frames;
+}
+
+.rotateOut.go {
+  .animation( rotateOut );
+}
+
+/************
+* rotateOutUpLeft *
+*************/
+
+.rotateOutUpLeft-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( left bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( -90deg );
+    .transform-origin( left bottom );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes rotateOutUpLeft {
+  .rotateOutUpLeft-frames;
+}
+
+@keyframes rotateOutUpLeft {
+  .rotateOutUpLeft-frames;
+}
+
+.rotateOutUpLeft.go {
+  .animation( rotateOutUpLeft );
+}
+
+/************
+* rotateOutDownLeft *
+*************/
+
+.rotateOutDownLeft-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( left bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 90deg );
+    .transform-origin( left bottom );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes rotateOutDownLeft {
+  .rotateOutDownLeft-frames;
+}
+
+@keyframes rotateOutDownLeft {
+  .rotateOutDownLeft-frames;
+}
+
+.rotateOutDownLeft.go {
+  .animation( rotateOutDownLeft );
+}
+
+/************
+* rotateOutUpRight *
+*************/
+
+.rotateOutUpRight-frames() {
+  0% {
+    .rotate( 0 );
+    .transform-origin( right bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 90deg );
+    .transform-origin( right bottom );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes rotateOutUpRight {
+  .rotateOutUpRight-frames;
+}
+
+@keyframes rotateOutUpRight {
+  .rotateOutUpRight-frames;
+}
+
+.rotateOutUpRight.go {
+  .animation( rotateOutUpRight );
+}

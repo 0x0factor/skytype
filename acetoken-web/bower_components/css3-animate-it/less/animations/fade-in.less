@@ -1,0 +1,178 @@
+.fadeInRight,
+.fadeInLeft,
+.fadeInUp,
+.fadeInDown {
+  .opacity;
+  .translateX( 400px );
+}
+
+/**********
+* Fade In *
+**********/
+
+.fadeIn-frames() {
+  0% {
+    .opacity;
+  }
+  100% {
+    display: block;
+
+    .opacity( 1 );
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  .fadeIn-frames;
+}
+
+@keyframes fadeIn {
+  .fadeIn-frames;
+}
+
+.fadeIn {
+  .opacity;
+
+  &.go {
+    .animation( fadeIn );
+  }
+}
+
+/*************
+* FadeInLeft *
+*************/
+
+.fadeInLeft-frames() {
+  0% {
+    .opacity;
+    .translateX( -400px );
+  }
+  50% {
+    .opacity( .3 );
+  }
+  100% {
+    .opacity( 1 );
+    .translateX;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  .fadeInLeft-frames;
+}
+
+@keyframes fadeInLeft {
+  .fadeInLeft-frames;
+}
+
+.fadeInLeft {
+  .opacity;
+  .translate( -400px );
+
+  &.go {
+    .animation( fadeInLeft );
+  }
+}
+
+/*************
+* FadeInRight *
+*************/
+
+.fadeInRight-frames() {
+  0% {
+    .opacity;
+    .translateX( 400px );
+  }
+  50% {
+    .opacity( .3 );
+  }
+  100% {
+    .opacity( 1 );
+    .translateX;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  .fadeInRight-frames;
+}
+
+@keyframes fadeInRight {
+  .fadeInRight-frames;
+}
+
+.fadeInRight {
+  .opacity;
+  .translateX( 400px );
+
+  &.go {
+    .animation( fadeInRight );
+  }
+}
+
+/*************
+* FadeInUp *
+*************/
+
+.fadeInUp-frames() {
+  0% {
+    .opacity;
+    .translateY( 400px );
+  }
+  50% {
+    .opacity( .3 );
+  }
+  100% {
+    .opacity( 1 );
+    .translateY;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  .fadeInUp-frames;
+}
+
+@keyframes fadeInUp {
+  .fadeInUp-frames;
+}
+
+.fadeInUp {
+  .opacity;
+  .translateY( 400px );
+
+  &.go {
+    .animation( fadeInUp );
+  }
+}
+
+/*************
+* FadeInDown *
+*************/
+
+.fadeInDown-frames() {
+  0% {
+    .opacity;
+    .translateY( -400px );
+  }
+  50% {
+    .opacity( .3 );
+  }
+  100% {
+    .opacity( 1 );
+    .translateY;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  .fadeInDown-frames;
+}
+
+@keyframes fadeInDown {
+  .fadeInDown-frames;
+}
+
+.fadeInDown {
+  .opacity;
+  .translateY( -400px );
+
+  &.go {
+    .animation( fadeInDown );
+  }
+}

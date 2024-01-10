@@ -1,0 +1,15 @@
+{
+  "name": "css3-animate-it",
+  "homepage": "https://github.com/Jack-McCourt/css3-animate-it",
+  "version": "1.0.3",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.3",
+    "commit": "61aff0f0c177265ea6cc195e31d57a84ae8d9078"
+  },
+  "_source": "https://github.com/Jack-McCourt/css3-animate-it.git",
+  "_target": "^1.0.3",
+  "_originalSource": "css3-animate-it",
+  "_direct": true
+}

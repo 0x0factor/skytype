@@ -1,0 +1,139 @@
+.ts-table-row {
+	display: table;
+}
+.ts-table-row > div {
+	display: table-cell;
+	vertical-align: top;
+}
+.ts-table-auth {
+	width: 70%;
+	border-right: 10px solid transparent;
+}
+.ts-table-ad {
+	width: 30%;
+	border-left: 10px solid transparent;
+}
+.ts-ad-area {
+	margin-top: .5em;
+	border-left: 3px solid #0073aa;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 3px 3px rgba(0,0,0,.04);
+	background: #fff;
+	padding: 10px 10px 0px;
+}
+.toggleText {
+	color: #0095ff!important;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+.toggleText:active {
+	opacity: .7;
+}
+.ts-ad-area a.button {
+	background-color: #0095ff!important;
+	border-color: #0095ff!important;
+	box-shadow: 0 1px 0 #0095ff!important;
+	color: #fff!important;
+}
+#ts-ad-area-messages {
+	height: 240px;
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+}
+.ts-custome_form {
+	padding: 0;
+}
+.toplevel_page_typesquare-admin-menu li:nth-child(4) {
+	display: none;
+}
+.tableBorder {
+	border-top: 1px solid #ddd!important;
+	border-bottom: 1px solid #ddd!important;
+}
+.textMute {
+	color: #9A9899;
+}
+.dangerText {
+	color: #DC3737;
+}
+.secondTable {
+	border-top: none;
+	position: relative;
+	bottom: 8px;
+}
+.limitTriangle {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 0 5px;
+	position: relative;
+	bottom: 2px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.limitTriangle.open {
+	transform: rotate(-180deg);
+	transition: all 0.3s;
+}
+.authTriangle {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 0 5px;
+	position: relative;
+	bottom: 2px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.authTriangle.open {
+	transform: rotate(-180deg);
+	transition: all 0.3s;
+}
+.advancedTriangle {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 0 5px;
+	position: relative;
+	bottom: 2px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.advancedTriangle.open {
+	transform: rotate(-180deg);
+	transition: all 0.3s;
+}
+
+.button.delete {
+	background: #e14d43;
+	border-color: #d02c21 #ba281e #ba281e;
+	color: #fff;
+	-webkit-box-shadow: 0 1px 0 #ba281e;
+	box-shadow: 0 1px 0 #ba281e;
+	text-shadow: 0 -1px 1px #ba281e, 1px 0 1px #ba281e, 0 1px 1px #ba281e, -1px 0 1px #ba281e;
+}
+.button.delete:hover, .button.delete:focus {
+	color: #fff;
+  border-color: #e14d43;
+	background: #e14d43;
+}
+.button.delete:focus {
+  box-shadow: 0 0 0 2px #eba3a3;
+}
+.button.delete[disabled], .button.delete:disabled {
+  color: #f4cdcd;
+  border-color: #e9eff3;
+}
+.parsley-errors-list li.parsley-required {
+    color: #DC3737;
+}
+.parsley-errors-list li.parsley-type {
+    color: #DC3737;
+}
+.parsley-errors-list li.parsley-length {
+    color: #DC3737;
+}
+.parsley-errors-list li.parsley-checkPassword {
+    color: #DC3737;
+}

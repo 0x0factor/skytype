@@ -1,0 +1,55 @@
+/********
+* Shake *
+********/
+
+.shake-frames() {
+  0%, 100% {
+    .translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    .translateX( -10px );
+  }
+  20%, 40%, 60%, 80% {
+    .translateX( 10px );
+  }
+}
+
+@-webkit-keyframes shake {
+  .shake-frames;
+}
+
+@keyframes shake {
+  .shake-frames;
+}
+
+.shake.go {
+  .animation( shake );
+}
+
+/********
+* ShakeUp *
+********/
+
+.shakeUp-frames() {
+  0%, 100% {
+    .translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    .translateY( -10px );
+  }
+  20%, 40%, 60%, 80% {
+    .translateY( 10px );
+  }
+}
+
+@-webkit-keyframes shakeUp {
+  .shakeUp-frames;
+}
+
+@keyframes shakeUp {
+  .shakeUp-frames;
+}
+
+.shakeUp.go {
+  .animation( shakeUp );
+}

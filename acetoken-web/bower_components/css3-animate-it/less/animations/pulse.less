@@ -1,0 +1,27 @@
+/********
+* pulse *
+*********/
+
+.pulse-frames() {
+  0% {
+    .scale( 1 );
+  }
+  50% {
+    .scale( 1.1 );
+  }
+  100% {
+    .scale( 1 );
+  }
+}
+
+@-webkit-keyframes pulse {
+  .pulse-frames;
+}
+
+@keyframes pulse {
+  .pulse-frames;
+}
+
+.pulse.go {
+  .animation( pulse );
+}

@@ -1,0 +1,638 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+// @include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@mixin prefix($property, $value) {
+   @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+      #{$prefix}#{$property}: $value;
+   }
+}
+
+@mixin simpleBg() {
+  background: -moz-linear-gradient(-45deg, rgba(88,222,255,0.8) 0%, rgba(147,6,246,0.8) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(88,222,255,0.8) 0%,rgba(147,6,246,0.8) 100%);
+  background: linear-gradient(135deg, rgba(88,222,255,0.8) 0%,rgba(147,6,246,0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b358deff', endColorstr='#b39306f6',GradientType=1 );
+}
+
+@mixin keyframes($animation-name: animaton) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  -moz-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* --------------------------------
+  common style
+------------------------------- */
+html, body {
+  height: 100% !important;
+  padding: 0px;
+  margin:0;
+  -webkit-font-smoothing: antialiased;
+  header { overflow: hidden;}
+  @include breakpoint(small only) {
+    p,li,dt,dd,a,label,th,td,.button,select,label { font-size: 90%;}
+  }
+}
+
+ol, ul {
+  list-style: none;
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+
+span.nowr {
+  text-indent: 0;
+  display: inline-block;
+}
+
+.fontColorW { color: $white;}
+.fontColorY { color: $yellow;}
+.fontColorP { color: $semiPurple;}
+.mbnone { margin-bottom: 0;}
+@include breakpoint(small only) {
+  .small-fs { font-size: .7rem;}
+  .small-mb { margin-bottom: 1rem;}
+}
+
+.button {
+  background-color: rgba(70,40,118,0.7);
+}
+
+.reveal {
+  .button {
+    margin-top: 1rem;
+  }
+}
+
+//loading
+@include keyframes(bounce) {
+  0% {
+    transform:scale(1);
+    background-color:rgba(255,255,255,1);
+  }
+  100% {
+    transform:scale(.3);
+    background-color:rgba(255,255,255,.4);
+  }
+}
+
+#loaderBg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background: $darkPurple;
+  z-index: 10;
+}
+
+#loaderWrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin: -175px 0 0 -100px;
+  text-align: center;
+  color: $white;
+  z-index: 20;
+}
+
+#loaderIcon {
+  position: relative;
+  width: 50px;
+  height: 12px;
+  margin: auto;
+}
+
+.loaderIcon {
+  position: absolute;
+  top: 0;
+  background-color: $white;
+  width: 12px;
+  height: 12px;
+  @include animation(bounce 1.69s ease infinite normal);
+  @include prefix(transform, scale(.3));
+  border-radius: 8px;
+}
+
+#loaderIcon_1{
+  left: 0;
+  @include prefix(animation-delay, 0.68s);
+}
+
+#loaderIcon_2{
+  left: 20px;
+  @include prefix(animation-delay, 0.85s);
+}
+
+#loaderIcon_3{
+  left: 40px;
+  @include prefix(animation-delay, 1.01s);
+}
+
+//common
+#contentWrap { margin: 0 1rem;}
+
+.top-bar {
+  .menu {
+    font-size: .75rem;
+    font-weight: 600;
+    img {
+      width: auto;
+      height: 1rem;
+    }
+  }
+}
+
+footer {
+  .aceTokenIcon {
+    width: 55px;
+    margin-bottom: .5rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h5 {
+    margin-bottom: .2rem;
+    img { width: 15px;}
+  }
+  p {
+    margin-bottom: .2rem;
+    font-size: .85rem;
+  }
+}
+
+//style
+section {
+  header {
+    h1 img {
+      width: auto;
+      height: 50px;
+      &.large { height: 80px;}
+      @include breakpoint(small only) {
+        height: 30px;
+        &.large { height: 50px;}
+      }
+    }
+  }
+}
+
+.inner {
+  padding: 4rem 0;
+  &.large { padding: 7rem 0;}
+  @include breakpoint(small only) {
+    padding: 3rem 0;
+    &.large { padding: 5rem 0;}
+  }
+}
+
+.imgOver {
+  color: $white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24,5,59,0.3);
+  h2, h3 { color: $white;}
+  &.purple {
+    background-color: rgba(24,5,59,0.82);
+  }
+}
+
+.bgGlay {
+  background-color: $bgGlay;
+}
+
+.title-bottom-border {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top : solid 1px $glay;
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+  }
+  &.white:before { border-color: $white; }
+}
+
+.circleList {
+  margin-top: 2rem;
+  .roundImage {
+    text-align: center;
+    margin: 0 auto.8rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 65%;
+    &:hover .roundHover {
+      @include prefix(transform, scale(1));
+      background: rgba(24,5,59,0.82);
+      img { display: block;}
+      p { color: $white;}
+    }
+  }
+  .roundHover {
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    @include prefix(box-sizing, border-box);
+    @include prefix(transition, 0.3s ease-in-out);
+    @include prefix(transform, scale(.5));
+    img {
+      width: 70%;
+      display: none;
+      margin: 0 auto .2rem;
+    }
+    p {
+      margin-bottom: 0;
+      color: transparent;
+    }
+  }
+  h3 {
+    font-family: $body-font-family;
+    text-align: center;
+    margin-bottom: .6rem;
+  }
+  p {
+    font-size: .85rem;
+    line-height: 1.4;
+  }
+  .textBox {
+    padding: .3rem;
+    margin: .3rem 0 0;
+    &.purple {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+  .arrowCross { width: 30px;}
+  @include breakpoint(small only) {
+    &.circleList-arrow {
+      li { margin-bottom: 2rem;}
+    }
+    .arrowCross {
+      @include prefix(transform, rotate(90deg));
+      margin: .8rem;
+    }
+  }
+}
+
+.arrowIcon {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -7px;
+    margin-right: -27px;
+    content: '';
+    width: 30px;
+    height: 15px;
+    background: transparent url('../image/arrowCross.svg') no-repeat center center;
+    background-size: 30px 15px;
+  }
+  @include breakpoint(small only) {
+    &.small-notArrow:after {
+      display: none;
+    }
+    &.small-arrowRight:before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -7px;
+      margin-right: -27px;
+      content: '';
+      width: 30px;
+      height: 15px;
+      background: transparent url('../image/arrowCross.svg') no-repeat center center;
+      background-size: 30px 15px;
+    }
+    &.small-arrowTop:after {
+      top: 0;
+      right: 50%;
+      margin-top: -30px;
+      margin-right: -15px;
+      @include prefix(transform, rotate(90deg));
+    }
+  }
+  @include breakpoint(medium up) {
+    &.medium-notArrow:after {
+      display: none;
+    }
+  }
+}
+
+//video style
+.videoWrap {
+  position: relative;
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../image/topSection.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  @include breakpoint(small only) {
+    video { display: none;}
+  }
+}
+
+//pre style
+@mixin preChartIcon($position, $size) {
+  margin-left: $position;
+  margin-bottom: $position;
+  width: $size;
+  height: $size;
+}
+
+@include keyframes(spin) {
+  0% {-webkit-transform: scale(0);opacity: 0.4;}
+  100% {-webkit-transform: scale(1);opacity: 0;}
+}
+
+.preInfo {
+  text-align: center;
+  > li {
+    position: relative;
+    padding-bottom: 5rem;
+    color: $semiPurple;
+    background: $purple url('../image/preSale.jpg') no-repeat center center;
+    background-size: cover;
+    @include breakpoint(medium down) {
+      padding: 1rem 0;
+    }
+    @include breakpoint(medium up) {
+      border-right: solid 1px scale-color($darkPurple, $lightness: -50%);
+      &:first-child { border-left: solid 1px scale-color($darkPurple, $lightness: -50%);}
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: $darkPurple;
+      padding-bottom: 5rem;
+      @include prefix(transition, 0.3s ease-in-out);
+      @include breakpoint(medium down) {
+        border-bottom: solid 1px scale-color($darkPurple, $lightness: -50%);
+        &:first-child { border-top: solid 1px scale-color($darkPurple, $lightness: -50%);}
+      }
+    }
+    dl {
+      dt {
+        font-size: .9rem;
+        font-weight: normal;
+        span { font-size: 1.2rem;}
+      }
+      dd {
+        &:nth-of-type(1) { color: $yellow;}
+        &:nth-of-type(2) { color: $white;}
+      }
+    }
+    .preBg img {
+      vertical-align: bottom;
+    }
+    .preChart {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+      position: relative;
+      &:before, &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        content:'';
+        border-radius: 50%;
+      }
+      &:before {
+        @include preChartIcon(-0.3rem, 0.6rem);
+        background-color: $semiPurple;
+        @include prefix(transition, 0.3s ease-in-out);
+      }
+      &:after {
+        @include preChartIcon(-1.2rem, 2.4rem);
+        background-color: $white;
+        @include animation(spin 3s linear infinite normal);
+      }
+    }
+    &:hover {
+      color: $white;
+      &:before {
+        background-color: rgba(42,24,72,.4);
+      }
+      .preChart {
+        &:before { background-color: $white;}
+      }
+    }
+  }
+}
+
+@include breakpoint(medium up) {
+  #pre1 { background-position: 0;}
+  #pre2 { background-position: 20%;}
+  #pre3 { background-position: 40%;}
+  #pre4 { background-position: 60%;}
+  #pre5 { background-position: 80%;}
+}
+
+
+/* --------------------------------
+  section style
+------------------------------- */
+#topSection, #loaderBg {
+  .title-bottom-border { padding-bottom: .4rem;}
+  .aceTokenOnly { width: 132px;}
+  .aceTokenText { width: 320px;}
+  h1, h2 { margin-bottom: 0.6rem;}
+  h2 {
+    font-size: 2.5rem;
+    line-height: 30px;
+    span { font-size: 1.2rem;}
+  }
+  @include breakpoint(small only) {
+    .aceTokenOnly { width: 100px;}
+    .aceTokenText { width: 200px;}
+    h2 { font-size: 1.5rem}
+  }
+}
+
+#topSection {
+  background: $darkPurple url('../image/topSection.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#wthatsAceToken {
+  @include breakpoint(small only) {
+    .aceTokenThree, .aceTokenBox {
+      margin-bottom: 1rem;
+      max-width: 200px;
+    }
+  }
+  @include breakpoint(medium up) {
+    .aceTokenThree { max-width: 150px; }
+  }
+}
+
+#simpleWallet {
+  position: relative;
+  overflow: hidden;
+  .phone {
+    position: relative;
+    a.smartView {
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      top: 11.9%;
+      left: 17.9%;
+      height: 68.4%;
+      right: 16.2%;
+      border-radius: 5px;
+      .smartViewContent {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        .responsive-embed {
+          top: 10%;
+        }
+      }
+      .simpleView {
+        position: absolute;
+        top: 0;
+        right: 0;
+        > .row { height: 100%;}
+      }
+      .smartHover {
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        background-color: transparent;
+        @include prefix(box-sizing, border-box);
+        @include prefix(transition, all .5s);
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &:hover .smartHover {
+        top: 0;
+        @include simpleBg();
+      }
+    }
+  }
+  .icon { width: 3rem}
+}
+#player1 {
+  z-index: -1;
+  position: absolute;
+}
+
+#preSalePeriod {
+  position: relative;
+  overflow: hidden;
+  background-color: $darkPurple;
+  .inner {
+    color: $white;
+  }
+  @include breakpoint(large up) {
+    .inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+#contacts {
+  background: $purple url('../image/contacts.jpg') no-repeat center center;
+  background-size: cover;
+  @include breakpoint(small only) {
+    background-position: 25%;
+  }
+}

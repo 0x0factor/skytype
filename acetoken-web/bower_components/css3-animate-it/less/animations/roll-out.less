@@ -1,0 +1,28 @@
+/************
+* rollOut *
+*************/
+
+.rollOut-frames() {
+  0% {
+    .rotate( 0deg );
+    .translateX( 0px );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 120deg );
+    .translateX( 100% );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes rollOut {
+  .rollOut-frames;
+}
+
+@keyframes rollOut {
+  .rollOut-frames;
+}
+
+.rollOut.go {
+  .animation( rollOut );
+}

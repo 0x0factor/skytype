@@ -1,0 +1,36 @@
+/*******
+* tada *
+********/
+
+.tada-frames() {
+  0% {
+    .scale( 1 );
+  }
+  10%, 20% {
+    .scale( .9 );
+    .rotate( -3deg );
+  }
+  30%, 50%, 70%, 90% {
+    .scale( 1.1);
+    .rotate( 3deg );
+  }
+  40%, 60%, 80% {
+    .scale( 1.1 );
+    .rotate( -3deg );
+  }
+  100% {
+    .scale( 1 );
+  }
+}
+
+@-webkit-keyframes tada {
+  .tada-frames;
+}
+
+@keyframes tada {
+  .tada-frames;
+}
+
+.tada.go {
+  .animation( tada );
+}

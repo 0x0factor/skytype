@@ -1,0 +1,152 @@
+/************
+* bounceOut *
+*************/
+
+.bounceOut-frames() {
+  0% {
+    .scale( 1 );
+  }
+  25% {
+    .scale( .95 );
+  }
+  50% {
+    .opacity( 1 )
+    .scale( 1.1 );
+  }
+  100% {
+    .opacity;
+    .scale( .3 );
+  }
+}
+
+@-webkit-keyframes bounceOut {
+  .bounceOut-frames;
+}
+
+@keyframes bounceOut {
+  .bounceOut-frames;
+}
+
+.bounceOut.goAway {
+  .animation( bounceOut );
+}
+
+/************
+* bounceOutUp *
+*************/
+
+.bounceOutUp-frames() {
+  0% {
+    .translateY;
+  }
+  20% {
+    .opacity( 1 );
+    .translateY( 20px );
+  }
+  100% {
+    .opacity;
+    .translateY( -2000px );
+  }
+}
+
+@-webkit-keyframes bounceOutUp {
+  .bounceOutUp-frames;
+}
+
+@keyframes bounceOutUp {
+  .bounceOutUp-frames;
+}
+
+.bounceOutUp.goAway {
+  .animation( bounceOutUp );
+}
+
+/************
+* bounceOutDown *
+*************/
+
+.bounceOutDown-frames() {
+  0% {
+    .translateY;
+  }
+  20% {
+    .opacity;( 1 );
+    .translateY( -20px );
+  }
+  100% {
+    .opacity;
+    .translateY( 2000px );
+  }
+}
+
+@-webkit-keyframes bounceOutDown {
+  .bounceOutDown-frames;
+}
+
+@keyframes bounceOutDown {
+  .bounceOutDown-frames;
+}
+
+.bounceOutDown.goAway {
+  .animation( bounceOutDown );
+}
+
+/************
+* bounceOutLeft *
+*************/
+
+.bounceOutLeft-frames() {
+  0% {
+    .translateX;
+  }
+  20% {
+    .opacity( 1 );
+    .translateX( 20px );
+  }
+  100% {
+    .opacity;
+    .translateX( -2000px );
+  }
+}
+
+@-webkit-keyframes bounceOutLeft {
+  .bounceOutLeft-frames;
+}
+
+@keyframes bounceOutLeft {
+  .bounceOutLeft-frames;
+}
+
+.bounceOutLeft.goAway {
+  .animation( bounceOutLeft );
+}
+
+/************
+* bounceOutRight *
+*************/
+
+.bounceOutRight-frames() {
+  0% {
+    .translateX;
+  }
+  20% {
+    .opacity( 1 );
+    .translateX( -20px );
+  }
+  100% {
+    .opacity;
+    .translateX( 2000px );
+  }
+}
+
+@-webkit-keyframes bounceOutRight {
+  .bounceOutRight-frames;
+}
+
+@keyframes bounceOutRight {
+  .bounceOutRight-frames;
+}
+
+.bounceOutRight.goAway {
+  .animation( bounceOutRight );
+}

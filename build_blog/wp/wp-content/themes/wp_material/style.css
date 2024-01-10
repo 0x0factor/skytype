@@ -1,0 +1,1913 @@
+﻿/*
+Theme name: マテリアル
+Author: Nobuo_CREATE
+Author URI: http://wp-material.net
+Version: 2.13.0
+*/
+
+/****  リセット  ****/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+h1,h2,h3,h4,h5,h6{
+	clear: both;
+}
+
+
+
+
+/****  base  ****/
+body{
+	font-size: 17px;
+	line-height: 1.7; 
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	color: #333;
+	min-width: 1058px;
+} 
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+	word-wrap:break-word;
+	overflow-wrap:break-word;
+}
+
+
+/****  lsf  ****/
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('LigatureSymbols/LigatureSymbols-2.11.eot');
+    src: url('LigatureSymbols/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('LigatureSymbols/LigatureSymbols-2.11.woff') format('woff'),
+         url('LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype'),
+         url('LigatureSymbols/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('LigatureSymbols/LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  -o-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+	word-wrap: normal;
+	overflow-wrap: normal;
+}
+
+.lsf-icon:before {
+	content:attr(title);
+	margin-right:0.3em;
+	font-size:130%;
+	word-wrap: normal;
+	overflow-wrap: normal;
+}
+.lsf-icon.amazon:before {
+  content: '\E007';
+}
+
+
+
+/****  icomoon  ****/
+@font-face {
+	font-family: 'icomoon';
+	src:url('./icomoon/icomoon.eot?-mpwpw7');
+	src:url('./icomoon/icomoon.eot?#iefix-mpwpw7') format('embedded-opentype'),
+		url('./icomoon/icomoon.woff?-mpwpw7') format('woff'),
+		url('./icomoon/icomoon.ttf?-mpwpw7') format('truetype'),
+		url('./icomoon/icomoon.svg?-mpwpw7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+font-size: 0.7em;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pocket:before {
+	content: "\e600";
+}
+
+/****  文字装飾  ****/
+
+.red{color: red;}
+.blue{color: blue;}
+.green{color: green;}
+.gray{color: gray;}
+
+.b, strong{font-weight: bold;}
+
+.ll{font-size: 1.6em; font-weight: bold;}
+.l{font-size: 1.3em; font-weight: bold;}
+.s{font-size: 0.85em;}
+.ss{font-size: 0.65em;}
+
+.back-red{background-color: #ffccff;}
+.back-blue{background-color:#ccffff;}
+
+.badge-red,
+.badge-green{
+	padding: 3px 8px 1px;
+	margin-right: 5px;
+	border-radius: 7px;
+	color: #fff;
+}
+.badge-red{
+	background-color: #e00;
+}
+.badge-green{
+	background-color: #060;
+}
+
+.clear{
+	clear: both;
+	line-height: 0;
+	overflow: hidden;
+}
+.space{
+	clear: both;
+	height: 2.5em;
+}
+
+table.hyou{
+	border-collapse: collapse; 
+	table-layout: fixed;
+	margin: 20px auto 2.5em;
+	border:1px solid #111;
+}
+
+table.hyou th, table.hyou td{
+	text-align: center;
+	padding: 5px 10px;
+	border: 1px solid #111;
+}
+
+table.hyou th{
+	background-color: #bde;
+}
+
+.no-deco{text-decoration: none;}
+
+a:hover img {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+}
+
+
+
+
+/****  ベーシックレイアウト  ****/
+.main-side{
+	width: 1058px;
+	margin: 30px auto;
+}
+.main{
+	width: 728px;
+	margin-right: 30px;
+	float: left;
+}
+.side{
+	width: 300px;
+	float: left;
+}
+.footer{
+	clear: both;
+	padding: 60px 0;
+	text-align: center;
+	color: #fff;
+}
+
+
+
+
+
+/****  ヘッダー  ****/
+.header-inner{
+	width: 1058px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+
+.site-title{
+	color: #fff;
+	font-size: 1.9em;
+	text-shadow: 1px 1px 0 #666;
+	padding: 20px 20px 15px;
+}
+.header-img{
+	display: block;
+	max-width: 100%;
+}
+.site-title a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.site-desc{
+	color: #fff;
+	font-size: 0.9em;
+	padding: 20px 20px 0;
+	//margin-top: 20px;
+}
+
+nav{
+	width: 100%;
+	box-shadow: 0 2px 5px #999;
+	z-index: 5;
+	margin-bottom:30px;
+}
+.menu-mobile{
+	display: none;
+}
+.nav-inner{
+	width: 1058px;
+	margin: 0 auto;
+}
+
+.nav-inner ul{
+	list-style-type: none;
+}
+.nav-inner ul li{
+	display: inline-block;
+}
+.nav-inner ul li a{
+	display: inline-block;
+	font-size: 0.9em;
+	color: #fff;
+	padding: 7px 15px;
+}
+.nav-inner ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/****  パンくず  ****/
+.bread{
+	margin: 10px 0;
+}
+.bread ul{
+	list-style: none;
+	font-size: 0.75em;
+}
+.bread ul li{
+	color: #666;
+	display: inline-block;
+	margin: 0 10px;
+}
+.bread ul li a{
+	color: #666;
+}
+
+
+
+
+
+/****  big-box  ****/
+.big-box{
+	margin-bottom: 30px;
+}
+.big-box .box-header{
+	font-size: 1.5em;
+	padding: 0;
+	margin: 0 0 10px 5px;
+}
+
+.hide{
+	display: none;
+}
+.post{
+	width: 32%;
+	float: left;
+	background-color: #fff;
+	margin-right: 2%;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 5px #999;
+	overflow: hidden;
+}
+
+.col-3{
+	margin-right: 0;
+}
+.thumb-box{
+	overflow:hidden;
+}
+
+.thumb-box img{
+	width:100%;
+	height: auto;
+	display: block;
+}
+.no-thumbnail{
+	height: 120px;
+	position: relative;
+	overflow: hidden;
+}
+.no-thumbnail p{
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1;
+	position: absolute;
+	right: 10px;
+	bottom: 25px;
+	text-align: right;
+}
+
+.post-info{
+	padding: 10px;
+}
+.share-count-top{
+	margin: 5px 10px 5px 0;
+	font-size: 0.8em;
+	line-height: 1;
+	vertical-align: top;
+	float: left;
+}
+.up-date{
+	font-size: 0.8em;
+	color: #666;
+	float: left;
+}
+.post-title{
+	color: #333;
+	font-size: 1em;
+	padding: 3px 0 0;
+	line-height: 1.5;
+	clear: both;
+}
+.post-title a{
+	color: #333;
+	text-decoration: none;
+}
+
+.cat-link{
+	text-align: right;
+	line-height: 1;
+	clear: both;
+}
+.cat-folder{
+	font-size: 1.3em;
+	color: #808080;
+	vertical-align: middle;
+}
+.cat-link a{
+	display: inline-block;
+	padding: 1px 5px 0px;
+	background-color: #414852;
+	line-height: 1.4;
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.7em;
+}
+
+.clear3{
+	clear: both;
+}
+.more-link{
+	width: 64px;
+	height: 64px;
+	line-height: 21px;
+	padding-top: 18px;
+	margin: -15px auto 55px;
+	border-radius: 32px;
+	font-size: 1.1em;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 2px 5px #999;
+}
+.more-link:hover{
+	cursor: pointer;
+}
+.more-link a:hover{
+	color: #fff;
+}
+
+
+
+/****  min-box  ****/
+.min-box{
+	background-color: #ebebeb;
+	width: 354px;
+	margin-bottom: 30px;
+	float: left;
+	padding: 15px 10px 0;
+	overflow: hidden;
+	position: relative;
+}
+.min-box .box-header{
+	font-size: 1.1em;
+	line-height: 1.2;
+	padding-right: 48px;
+	margin: 5px 0 17px;
+}
+.left{
+	margin-right: 20px;
+}
+
+.min-box .post{
+	background-color: #fff;
+	overflow: hidden;
+	margin-bottom: 20px;
+	width:100%;
+	box-shadow: 0 2px 5px #999;
+	padding-bottom: 0;
+}
+.min-box .thumb-box{
+	width: 23%;
+	height: 77px;
+	float: left;
+	overflow: hidden;
+}
+.min-box .thumb-box img{
+	width: auto;
+	height: 100%;
+	display: block;
+}
+.min-box .no-thumbnail{
+	max-height: 77px;
+}
+.min-box .no-thumbnail p{
+	font-size: 0.7em;
+	line-height: 1.1;
+	position: absolute;
+	right: 3px;
+	bottom: 15px;
+padding-left: 10px;
+}
+
+.min-box .post-info{
+	background-color: #fff;
+	width: 77%;
+	float: left;
+	padding: 4px 3px 0 5px;
+}
+.min-box .up-date{
+	font-size: 0.7em;
+	margin-bottom: 4px;
+}
+.min-box .share-count-top{
+	margin: 6px 0 4px 10px;
+	font-size: 0.7em;
+	line-height: 7px;
+}
+.min-box .post-title{
+	color: #333;
+	font-size: 0.9em;.
+	line-height: 1.2;
+	padding: 0;
+	margin-bottom: 0;
+}
+.min-more-link{
+	color: #fff;
+	font-size: 0.9em;
+	text-align:center;
+	width: 48px;
+	line-height: 48px;
+	height: 48px;
+	border-radius: 24px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 5px #999;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+
+
+
+
+
+/****  ページネーション  ****/
+.pagenavi {
+	clear:both;
+	text-align: center;
+	margin: 10px 0 50px;
+	
+}
+ 
+.pagenavi span,
+.pagenavi a {
+	margin: 0 4px;
+	padding: 7px 8px 5px;
+	text-decoration:none;
+	color:#fff;
+	background: #414852;
+}
+ 
+.pagenavi a:hover{
+	color:#fff;
+}
+ 
+.pagenavi .current{
+	color: #fff;
+}
+
+
+
+
+/****  カテゴリーページ  ****/
+.cat-desc{
+	margin: 0 0 20px;
+	color: #555;
+	font-size: 0.9em;
+}
+
+
+
+
+
+/****　　投稿・固定ページ  ****/
+.content-box{
+	background-color: #fff;
+	padding: 0 43px 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 5px #999;
+	position: relative;
+	overflow: hidden;
+}
+.content-header{
+	margin: 0 -43px 10px;
+	padding: 10px 43px 10px;
+}
+
+h1.title{
+	font-size: 1.9em;
+	color: #111;
+	line-height: 1.6;
+	margin: 45px 0 40px;
+	font-weight: bold;
+}
+
+.content-header .up-date,
+.content-header .cat-link{
+	text-align: right;
+	float: none;
+}
+.sns-counts .share-count-top{
+	font-size: 1.1em;
+}
+
+.eye-catch{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 30px;
+	box-shadow: 0 2px 5px #999;
+	clear: both;
+}
+.content{
+	margin-bottom: 50px;
+	clear: both;
+}
+.content p{
+	margin-bottom: 2em;
+}
+
+.content h2{
+	clear: both;
+	color: #fff;
+	font-size: 1.5em;
+	line-height: 1.3;
+	width: 100%;
+	padding: 10px 5px 5px 43px;
+	margin: 40px 0 15px -43px;
+}
+.content h2:first-child{
+	margin-top: 10px;
+}
+
+.content h3{
+	clear: both;
+	color: #111;
+	font-size: 1.4em;
+	line-height: 1.3;
+	padding: 5px 15px 0;
+	margin: 40px 0 15px;
+}
+
+.content h4{
+	clear: both;
+	color: #111;
+	font-size: 1.3em;
+	line-height: 1.3;
+	padding: 3px 12px 0;
+	margin: 30px 0 15px;
+}
+
+.content h5{
+	clear: both;
+	color: #111;
+	font-size: 1.2em;
+	line-height: 1.2;
+	padding: 3px 17px 0;
+	margin: 30px 0 10px;
+}
+
+.content h6{
+	clear: both;
+	color: #111;
+	font-size: 1.2em;
+	line-height: 1.2;
+	padding: 0 20px 0;
+	margin: 30px 0 10px;
+}
+
+.content img{
+	max-width: 100%;
+	height: auto;
+}
+
+.content img.alignnone{
+	max-width: 100%;
+	height: auto;
+	margin: 10px 0;
+	box-shadow: 0 2px 5px #999;
+}
+
+
+.content img.alignright {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	float: right;
+	margin: 0 0 10px 10px;
+	box-shadow: 0 2px 5px #999;
+}
+
+.content img.alignleft {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	float: left;
+	margin: 0 15px 10px 0;
+	box-shadow: 0 2px 5px #999;
+}
+
+.content img.aligncenter{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 10px auto;
+	box-shadow: 0 2px 5px #999;
+}
+.content iframe{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 2em;
+}
+.content blockquote{
+	width: 90%;
+	margin: 0 auto 2em;
+	font-size: 0.9em;
+	line-height:1.5;
+	background-color: #eef;
+	padding: 30px 20px 1px;
+}
+.content blockquote:before{
+	content: "“";
+	color: #999;
+	display: block;
+	font-size: 3em;
+	line-height: 0.6;
+}
+
+.content ul,
+.content ol
+{
+	padding-left: 6%;
+	margin-bottom: 2em;
+}
+.content ul li,
+.content ol li{
+	margin-bottom: 15px;
+}
+
+.content dl{
+	padding: 0 4%;
+	margin-bottom: 2.5em;
+}
+.content dl dt{
+	font-size:1.2em;
+	padding-left: 10px;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 5px;
+}
+.content dl dd{
+	margin-bottom: 1.5em;
+}
+.content .wp-caption{
+	text-align: center;
+	max-width: 100% !important;
+}
+
+
+
+
+/****  関連記事  ****/
+.kanren{
+	margin-bottom:30px;
+}
+.tag-header{
+	display: inline;
+	padding: 2px 8px 0;
+	background-color: #EA3382;
+	color: #fff;
+}
+.kanren ul{
+	margin: 10px 0 15px;
+	list-style: none;
+}
+.kanren ul li{
+	margin-bottom: 10px;
+	line-height: 1.4;
+	overflow: hidden;
+}
+
+.kanren .thumb-box{
+	width: 18%;
+	max-width: 110px;
+	height: 95px;
+	float: left;
+	clear: both;
+	margin-right: 2.5%;
+	margin-bottom: 10px;
+}
+.kanren .no-thumbnail{
+	width: 100%;
+	height: 100%;
+}
+.kanren .no-thumbnail p{
+	font-size: 0.7em;
+	right: 3px;
+	bottom: 10px;
+}
+.kanren-post-name{
+	font-size: 1.2em;
+	margin-top: 4px;
+}
+.kanren-post-name a{
+	text-decoration: none;
+}
+.kanren-post-name a:hover{
+	color: #EA3382;
+}
+
+.same-tags,
+.same-categories{
+	margin-bottom: 8px;
+}
+.same-tag,
+.same-category{
+	display: inline-block;
+	margin-right: 15px;
+}
+.same-tag a,
+.same-category a{
+	text-decoration: none;
+}
+
+
+
+
+/****  シェアボタン  ****/
+.share-buttons{
+
+}
+.share{
+	font-size: 1.3em;
+	padding-left: 10px;
+	border-bottom: 2px solid #59BEC7;
+	margin-bottom: 15px;
+}
+
+.share-count-button{
+	width: 19.5%;//24.1%;
+	margin: 0 0.3% 45px;//0 0.6% 45px;
+	float: left;
+	text-align: center;
+	box-shadow: 0 2px 5px #999;
+}
+.share-count-button:nth-child(1){
+	margin-left: 0;
+}
+.share-count-button:nth-child(5){
+	margin-right: 0;
+}
+.share-count{
+	background-color: #fff;
+	font-size: 0.9em;
+	line-height: 23px;
+}
+.share-button{
+	color: #fff !important;
+	font-size: 1.8em;
+	line-height: 32px;
+}
+
+.share-count-button .twitter{
+	background-color: #3589e2;
+}
+.share-count-button .twitter:hover{
+	color: #3589e2 !important;
+	background-color: #fff;
+}
+
+.share-count-button .facebook{
+	background-color: #0559b2;
+}
+.share-count-button .facebook:hover{
+	color: #0559b2 !important;
+	background-color: #fff;
+}
+.share-count-button .hatebu{
+	background-color: #1b6fc9;
+}
+.share-count-button .hatebu:hover{
+	color: #1b6fc9 !important;
+	background-color: #fff;
+}
+
+
+.share-count-button .pocket{
+	background-color: #EF4056;
+}
+.share-count-button .pocket:hover{
+	color: #EF4056 !important;
+	background-color: #fff;
+}
+
+
+.share-count-button .line{
+	background-color: #1DCD00;
+	line-height: 55px;
+	font-size: 2.8em;
+}
+.share-count-button .line:hover{
+	color: #1DCD00 !important;
+	background-color: #fff;
+}
+
+
+
+
+/****  記事下プロフィール欄  ****/
+.follow-underContent{
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.main .prof-box{
+	width: 50%;
+	float: left;
+	font-size: 18px;
+}
+
+.main .follow-box{
+	width: 50%;
+	float: left;
+	padding-left: 5px;
+}
+.main .follow-box .box-header{
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 0;
+	font-size: 1.2em;
+	line-height: 1.2;
+}
+
+
+/****  コメント欄  ****/
+
+#comments{
+	clear: both;
+}
+
+#comments #respond{
+}
+
+.comments-header{
+	font-size: 1.3em;
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+
+#comments input,
+#comments textarea{
+	display: block;
+}
+
+#comments ul{
+	list-style: none;
+}
+
+#comments ul li{
+	margin: 10px 0 30px;
+}
+#comments ul li: last-child{
+	margin-bottom: 10px;
+}
+
+#comments .combody{
+	background-color: #E6E6FA;
+	padding: 20px 15px 5px;
+	margin-bottom: 5px;
+}
+.combody p{
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}
+.combody ol{
+	margin-left: 43px;
+}
+
+#comments p.cominfo{
+	text-align: right;
+	font-size: 0.8em;
+	padding-right: 10px;
+}
+
+#comments textarea{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#comments .required{
+	color: #ff0000;
+}
+
+#comments p.inputtext label{
+	padding-bottom: 10px; 
+}
+
+.com-nav{
+	margin: -15px 0 30px;
+	overflow: hidden;
+}
+.com-back a,
+.com-next a{
+	display: block;
+	width:130px;
+	font-size: 0.8em;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	background-color: #414852;
+}
+
+.com-back a{
+	float: left;
+	border-radius: 15px 0 0 15px;
+}
+.com-next a{
+	float: right;
+	border-radius: 0 15px 15px 0;
+}
+
+.com-nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.comment-reply-title{
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+.go-comment-arrow{
+	display: inline-block;
+	margin-right: 15px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+	box-shadow: 0 2px 5px #999;
+	cursor: pointer;
+}
+
+.input-info{
+	margin-bottom: 10px;
+}
+
+.comment-form{
+	display: none;
+}
+
+
+
+
+
+
+/****  広告  ****/
+.ad{
+	clear: both;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.ad-728{
+	clear: both;
+	width: 728px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+.ad-big{
+	width: 300px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+
+.ad-post{
+	clear: both;
+}
+
+
+
+
+/****  サイドバー  ****/
+.side .box{
+	background-color: #fff;
+	overflow: hidden;
+	padding: 0 15px 10px;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 5px #999;
+}
+.side .box-header{
+	font-size: 1.2em;
+	padding: 15px 0 5px;
+	margin: 0 0 5px;
+}
+
+.side ul li{
+	list-style: none;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	font-size: 0.95em;
+	clear:both;
+	overflow: hidden;
+}
+.side .box a{
+	color: #006699;
+	text-decoration: none;
+}
+.side .box a:hover{
+	color: #EA3382;
+}
+
+.side ul.children{
+	margin: 8px 0 0 25px;
+	font-size: 0.95em;
+}
+.search-box{
+	height: 35px;
+	box-shadow: 0 2px 5px #999;
+	margin-bottom: 30px;
+}
+.search-text{
+	width: 80%;
+	height: 100%;
+	font-size: 1em;
+	float: left;
+	padding: 5px 10px;
+	margin: 0;
+	border: none;
+}
+.search-submit{
+	font-size: 1.2em;
+	width:20%;
+	height: 100%;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+.search-submit:hover{
+	background-color: #EA3382;
+}
+
+.side-share{
+	font-size: 1.2em;
+	padding: 0 15px;
+	margin: 0 0 5px;
+}
+
+
+
+
+/****  フォローボタン  ****/
+.side .follow-box{
+	padding: 0 !important;
+}
+.side .follow-box{
+	clear: both;
+}
+.follow-box .box-header{
+	padding: 15px 15px 5px;
+	margin: 0 !important;
+}
+
+.follow-icon{
+	width: 20%;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	line-height: 56px;
+	display: block;
+	float: left;
+}
+.twitter{
+	color: #3589e2;
+}
+.twitter:hover{
+	color: #fff;
+	background-color: #3589e2;
+}
+.fb{
+	color: #0559b2;
+}
+.fb:hover{
+	color: #fff;
+	background-color: #0559b2;
+}
+.g-plus{
+	color: #C1350B;
+}
+.g-plus:hover{
+	color: #fff;
+	background-color: #C1350B;
+}
+.feedly{
+	color: #2E933C;
+}
+.feedly:hover{
+	color: #fff;
+	background-color: #2E933C;
+}
+.line{
+	color: #1DCD00;
+	font-size: 2.3em;
+}
+
+.line:hover{
+	color: #fff;
+	background-color: #1DCD00;
+}
+.hatebu{
+	color: #1b6fc9
+}
+
+.pocket{
+	
+}
+
+.side .follow-box a:hover{
+	color: #fff !important;
+}
+.not{
+	color: #ddd;
+}
+.not:hover{
+	color: #ddd;
+	background-color: #fff;
+}
+
+
+
+
+/****  プロフィール欄  ****/
+.side .prof-box{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.side .prof-box .box-header{
+	padding-left: 5px;
+}
+.image-text{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+img.prof-image{
+	width: 28%;
+	float: left;
+	margin: 0 3% 3px 0; 
+}
+.prof-name{
+	font-size:1em;
+	line-height: 1.2;
+	margin-left: 30%;
+	margin-bottom: 7px;
+	border-bottom: 1px solid #aaa;
+	padding: 5px 5px 4px;
+}
+.prof-text{
+	font-size: 0.75em;
+	line-height: 1.6;
+}
+.twiiter-follow{
+	clear: both;
+	margin: 10px 0;
+}
+.like-box{
+	clear: both;
+	margin-top: 10px;
+}
+
+
+
+
+/****  WordPress_Popular_Posts  ****/
+.wpp-list li{
+	clear: both;
+}
+.wpp-thumbnail{
+	display:inline;
+	float:left;
+	margin-right: 8px !important;
+	border:none;
+}
+.wpp-post-title{
+	font-size: 0.95em;
+	margin-bottom: 15px;
+}
+.wpp-list li span{
+	font-size: 0.65em;
+	display: block;
+	margin-top: 3px;
+	margin-left: 10px;
+	color: #666;
+	float: right;
+}
+
+
+
+
+/****  アフィリバナー  ****/
+.affi-banner{
+	margin-bottom: 30px;
+}
+.affi-banner .box-header{
+	margin-left: 15px;
+	padding: 0;
+}
+
+
+
+
+/****  カレンダー  ****/
+#wp-calendar{
+	width: 100%;
+	max-width: 350px;
+	text-align: center;
+	margin-top: 15px;
+}
+#wp-calendar caption{
+	font-size: 1.2em;
+	border-bottom: 1px solid #666;
+	margin-bottom: 5px;
+}
+#wp-calendar th{
+	font-weight: bold;
+}
+#wp-calendar a{
+	text-decoration: underline;
+}
+
+
+
+/****  フッター  ****/
+.footer p{
+
+}
+.footer a{
+	color: #fff;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #EA3382;
+}
+
+
+
+
+/****  ボタン  ****/
+.move-button{
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px #999;
+	position: fixed;
+	bottom: 10px;
+}
+.move-button:hover{
+	background-color: #EA3382;
+	cursor: pointer;
+}
+
+.to-top{
+	right: 10px;
+}
+.to-home{
+	right: 70px;
+}
+
+/****  MENUバー、ガクッとなる対策  ****/
+.add-margin{
+	margin-bottom: 70px;
+}
+
+
+
+
+
+@media screen and (max-width: 1090px) {
+body{
+	font-size: 20px;
+	min-width: 0; 
+	width: 100%;
+}
+
+.header-inner{
+	width: 100%;
+}
+.site-title{
+	font-size: 1.6em;
+}
+
+.nav-inner{
+	width: 100%;
+	margin: 0 auto;
+}
+.menu-mobile{
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding: 7px 0 4px;
+	cursor: pointer;
+}
+.nav-inner div{
+	display: none;
+}
+.nav-inner ul li a{
+	padding:7px 7px;
+}
+
+.main-side{
+	width: 100%;
+	margin: 0 0 30px;
+	padding: 0;
+}
+.main{
+	width: 100%;
+	margin-right: 0;
+	float: none;
+}
+
+.content-box{
+	width: 100%;
+	margin: -30px 0 30px;
+	padding: 0 6% 30px;
+	overflow: hidden;
+	box-shadow: none;
+}
+.content-header{
+	margin-left: -7%;
+	margin-right: -7%;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.content-header .bread{
+	margin-left: 0;
+}
+.content h2{
+	margin-left: -7%;
+	padding-left: 6%;
+}
+.bread{
+	margin-top: 20px;
+}
+
+.big-box{
+	width: 100%;
+	padding: 20px 6% 30px;
+}
+.post{
+	width: 30%;
+	margin-right: 5%;
+}
+.col-3{
+	margin-right: 0;
+}
+
+.min-box{
+	width: 47%;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 17px;
+}
+.right{
+	margin-left: 0;
+}
+.min-box .thumb-box{
+	height: 80px;
+}
+.min-box .no-thumbnail{
+	max-height: 80px;
+}
+.min-box .share-count-top{
+	margin-top: 5px;
+}
+
+.main .prof-box{
+	font-size: 20px;
+}
+
+.side{
+	width: 100%;
+}
+.side-left{
+	width: 47%;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.side-right{
+	width: 47%;
+	float: left;
+	margin-left: 0;
+	margin-right: 2%;
+}
+
+/****  MENUバー、ガクッとなる対策  ****/
+.add-margin{
+	margin-bottom: 75px;
+}
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+body{
+	font-size: 19px;
+}
+.header-inner{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.site-title{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.site-desc{
+	//padding-top: 0;
+	padding-bottom: 30px;
+}
+
+.big-box{
+	padding: 0 3% 0;
+}
+.post{
+	width: 32%;
+	margin-right: 2%;
+}
+.col-3{
+	margin-right: 0;
+}
+
+.min-box{
+	width: 48%;
+	margin-left: 1%;
+	margin-right: 2%;
+}
+.right{
+	margin-left: 0;
+	margin-right: 1%;
+}
+
+.min-more-link{
+	right: 5%;
+}
+
+.main .prof-box{
+	font-size: 18px;
+}
+
+.side-left{
+	width: 48%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 2%;
+}
+.side-right{
+	width: 48%;
+	float: left;
+	margin-left: 0;
+	margin-right: 1%;
+}
+
+.content-box{
+	padding: 0 5% 30px;
+}
+.content-header{
+	margin-left: -6%;
+	margin-right: -6%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+h1.title{
+	font-size: 1.7em;
+	margin: 30px 2% 20px;
+}
+.content h2{
+	margin-left: -6%;
+	padding-left: 5%;
+}
+
+/****  MENUバー、ガクッとなる対策  ****/
+.add-margin{
+	margin-bottom: 73px;
+}
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+.big-box{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.post{
+	width: 47%;
+	float: left;
+	margin-right: 6%;
+}
+.col-3{
+	margin-right: 6%;
+}
+.col-2{
+	margin-right: 0;
+}
+.clear3{
+	clear: none;
+}
+.clear2{
+	clear: both;
+}
+
+.min-box{
+	width: 100%;
+	float: none;
+	margin: 0 auto 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 18px;
+}
+.min-box .box-header{
+	font-size: 1.3em;
+}
+.min-box .thumb-box{
+	height: 90px;
+}
+.min-box .no-thumbnail{
+	max-height: 90px;
+}
+.min-box .post-info{
+	padding: 8px 10px 1px;
+}
+
+.main .prof-box{
+	font-size: 16px;
+}
+
+.kanren-post-name{
+	font-size: 1.1em;
+}
+
+.side{
+	font-size: 16px;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+.side{
+	font-size: 18px;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.side .box,
+.side-left,
+.side-right{
+	width: 100%;
+	float: none;
+	margin-right: 0;
+	margin-left: 0;
+}
+.side .box{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.affi-banner .box-header{
+	margin-left: 5%;
+}
+.prof-name{
+	font-size: 1.1em;
+}
+.prof-text{
+	font-size: 0.9em;
+}
+.follow-underContent{
+	margin-bottom: 45px;
+}
+.main .prof-box{
+	width: 100%;
+	float: none;
+	padding: 0;
+	font-size: 20px;
+}
+.main .follow-box{
+	width: 100%;
+	float: none;
+	padding-left: 0;
+}
+.main .follow-box .box-header{
+	padding-top: 5px;
+}
+
+.kanren .thumb-box{
+	width: 23%;
+	height: 77px;
+}
+.kanren-post-name{
+	font-size: 1em;
+}
+
+.follow-icon{
+	font-size: 2.4em;
+}
+.line{
+	font-size: 2.6em;
+}
+}
+
+@media screen and (max-width: 450px) {
+body{
+	font-size: 17px;
+}
+.site-title{
+	font-size: 1.4em;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.site-desc{
+	font-size: 0.8em;
+}
+
+.bread ul li{
+	margin: 0 3px;
+}
+
+.big-box{
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.big-box .box-header{
+	font-size: 1.3em;
+}
+.post{
+	width: 100%;
+	float: none;
+	margin-right: 0;
+}
+.col-2,
+.col-3{
+	margin-right: 0;
+}
+.clear3,
+.clear2{
+	clear: both;
+}
+.post-title{
+	font-size: 1.3em;
+	line-height: 1.4;
+}
+.big-box .share-count-top{
+	font-size: 1em;
+}
+
+.min-box{
+	width: 100%;
+	float: none;
+	margin: 0 0 30px; 
+	font-size: 17px;
+}
+.min-box .box-header{
+	font-size: 1.1em;
+}
+.min-box .post{
+	margin-left: 0;
+	margin-right: 0;
+}
+.min-box .thumb-box{
+	height: 75px;
+}
+.min-box .no-thumbnail{
+	max-height: 75px;
+}
+.min-box .post-info{
+	padding: 5px 0 0 10px;
+}
+.min-box .up-date,
+.min-box .share-count-top{
+	margin-bottom: 2px;
+}
+.min-box .share-count-top{
+	margin-top: 6px;
+}
+.content-box{
+	padding: 0 3% 30px;
+}
+.content-header{
+	margin-left: -5%;
+	margin-right: -5%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+h1.title{
+	font-size: 1.5em;
+	margin: 30px 2% 20px;
+}
+
+.content h2{
+	font-size: 1.3em;
+	padding: 7px 5px 4px 5%;
+	margin-left: -5%;
+}
+
+.content h3{
+	font-size: 1.3em;
+	padding: 5px 10px 0;
+}
+
+.content h4{
+	color: #111;
+	font-size: 1.3em;
+	padding: 3px 10px 0;
+}
+
+.content h5{
+	font-size: 1.2em;
+	padding: 3px 10px 0;
+}
+.content h6{
+	font-size: 1.2em;
+	padding: 0 13px 0;
+}
+.content ul,
+.content ol{
+	padding-left: 10%;
+}
+
+.kanren-post-name{
+	font-size: 0.95em;
+}
+
+.main .prof-box{
+	font-size: 18px;
+}
+
+.side{
+	font-size: 17px;
+}
+.prof-name{
+	font-size: 1em;
+}
+.prof-text{
+	font-size: 0.8em;
+}
+
+.footer p{
+	font-size: 0.9em;
+}
+.move-button{
+	font-size: 1.7em !important;
+	width: 48px;
+	line-height: 48px;
+	bottom: 3px;
+}
+.to-top{
+	right: 3px;
+}
+.to-home{
+	right: 56px;
+}
+
+/****  MENUバー、ガクッとなる対策  ****/
+.add-margin{
+	margin-bottom: 69px;
+}
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+body{
+	font-size: 15px;
+}
+.big-box{
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+.min-box{
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.min-more-link{
+	right: 3%;
+}
+.min-box .post-info{
+	padding: 5px 0 0 5px;
+}
+.main .prof-box{
+	font-size: 16px;
+}
+
+.kanren .thumb-box{
+	height: 67px;
+}
+
+.side{
+	font-size: 16px;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+/****  MENUバー、ガクッとなる対策  ****/
+.add-margin{
+	margin-bottom: 66px;
+}
+}

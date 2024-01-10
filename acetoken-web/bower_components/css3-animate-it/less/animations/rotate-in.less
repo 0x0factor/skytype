@@ -1,0 +1,152 @@
+.rotateIn,
+.rotateInUpLeft,
+.rotateInUpRight,
+.rotateInDownLeft,
+.rotateDownUpRight {
+  .opacity;
+}
+
+/*****************
+* rotateIn *
+*****************/
+
+.rotateIn-frames() {
+  0% {
+    .rotate( -200deg );
+    .transform-origin( center center );
+    .opacity( 0 );
+  }
+  100% {
+    .rotate;
+    .transform-origin( center center );
+    .opacity( 1 );
+  }
+}
+
+@-webkit-keyframes rotateIn {
+  .rotateIn-frames;
+}
+
+@keyframes rotateIn {
+  .rotateIn-frames;
+}
+
+.rotateIn.go {
+  .animation( rotateIn );
+}
+
+/*****************
+* rotateInUpLeft *
+*****************/
+
+.rotateInUpLeft-frames() {
+  0% {
+    .rotate( 90deg );
+    .transform-origin( left bottom );
+    .opacity( 0 );
+  }
+  100% {
+    .rotate( 0deg );
+    .transform-origin( left bottom );
+    .opacity( 1 );
+  }
+}
+
+@-webkit-keyframes rotateInUpLeft {
+  .rotateInUpLeft-frames;
+}
+
+@keyframes rotateInUpLeft {
+  .rotateInUpLeft-frames;
+}
+
+.rotateInUpLeft.go {
+  .animation( rotateInUpLeft );
+}
+
+/*******************
+* rotateInDownLeft *
+*******************/
+
+.rotateInDownLeft-frames() {
+  0% {
+    .rotate( -90deg );
+    .transform-origin( left bottom );
+    .opacity( 1 );
+  }
+  100% {
+    .rotate( 0deg );
+    .transform-origin( left bottom );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  .rotateInDownLeft-frames;
+}
+
+@keyframes rotateInDownLeft {
+  .rotateInDownLeft-frames;
+}
+
+.rotateInDownLeft.go {
+  .animation( rotateInDownLeft );
+}
+
+/******************
+* rotateInUpRight *
+*******************/
+
+.rotateInUpRight-frames() {
+  0% {
+    .rotate( -90deg );
+    .transform-origin( right bottom );
+    .opacity;
+  }
+  100% {
+    .rotate( 0deg );
+    .transform-origin( right bottom );
+    .opacity( 1 );
+  }
+}
+
+@-webkit-keyframes rotateInUpRight {
+  .rotateInUpRight-frames;
+}
+
+@keyframes rotateInUpRight {
+  .rotateInUpRight-frames;
+}
+
+.rotateInUpRight.go {
+  .animation( rotateInUpRight );
+}
+
+/********************
+* rotateInDownRight *
+********************/
+
+.rotateInDownRight-frames() {
+  0% {
+    .rotate( 90deg );
+    .transform-origin( right bottom );
+    .opacity;
+  }
+  100% {
+    .rotate( 0deg );
+    .transform-origin( right bottom );
+    .opacity( 1 );
+  }
+}
+
+@-webkit-keyframes rotateInDownRight {
+  .rotateInDownRight-frames;
+}
+
+@keyframes rotateInDownRight {
+  .rotateInDownRight-frames;
+}
+
+.rotateInDownRight.go {
+  .animation( rotateInDownRight );
+}

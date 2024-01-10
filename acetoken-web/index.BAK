@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceToken - ICOデジタル通貨の購入はこちら</title>
+    <meta name="keywords" content="AceToken,ICO,デジタル通貨,CrypTrade,プレセール">
+    <meta name="description" content="このページはAceToken（エーストークン）のプレセール購入ページです。AceTokenはCrypTradeが発行するCryptStock（暗号株）の性質を持つデジタル通貨です。我々は、ブロックチェーン技術の開発に積極的に取り組み、AceTokenの流動性を高めていきます。" >
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#462876">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="bower_components/css3-animate-it/css/animations.css">
+    <!--&#91;if lt IE 9&#93;>
+    <script>
+      document.createElement('video');
+    </script>
+    <!&#91;endif&#93;-->
+    <style>
+      video { display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="loaderBg">
+      <div id="loaderWrap">
+        <img class="aceTokenOnly" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+        <div class="title-bottom-border white">
+          <h1><img class="aceTokenText" src="image/aceTokenText.svg" alt="AceToken"></h1>
+          <h2>Issued by CrypTrade.<br><span>Since 2016</span></h2>
+        </div>
+        <div id="loaderIcon">
+          <div id="loaderIcon_1" class="loaderIcon"></div>
+          <div id="loaderIcon_2" class="loaderIcon"></div>
+          <div id="loaderIcon_3" class="loaderIcon"></div>
+        </div>
+      </div>
+    </div>
+
+    <header data-sticky-container>
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="menu-centered">
+          <ul class="menu">
+            <li><a href="#wthatsAceToken">AceTokenについて</a></li>
+            <li><a href="#preSalePeriod">プレセール期間</a></li>
+            <li><a href="#contacts">お問い合わせ</a></li>
+            <!-- <li><a href="#"><img src="image/facebook.svg" alt="Facebook AceToken"></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="contentWrap">
+
+      <div id="topSection" class="videoWrap">
+        <video id="bgVideo" autoplay loop muted>
+          <source src="image/aceToken.mp4" type="video/mp4">
+          <source src="image/aceToken.wmv" type="video/wmv">
+        </video>
+        <div class="imgOver inner large">
+          <div class="row align-center">
+            <div class="small-12 columns text-center">
+              <img class="aceTokenOnly" src="image/aceTokenOnly.svg" alt="AceToken デジタル通貨">
+              <div class="title-bottom-border white">
+                <h1><img class="aceTokenText" src="image/aceTokenText.svg" alt="AceToken"></h1>
+                <h2>Issued by CrypTrade.<br><span>Since 2016</span></h2>
+              </div>
+              <p class="small-fs">AceTokenはCrypTradeが発行するCryptStock（暗号株）の性質を持つデジタル通貨です。<br>我々は、ブロックチェーン技術の開発に積極的に取り組み、<br>AceTokenの流動性を高めていきます。</p>
+            </div>
+            <div class="small-10 medium-4 large-3 columns">
+              <a class="button expanded" href="www.sales.acetoken.io">ICOに参加する</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="wthatsAceToken">
+        <div class="row align-center">
+          <div class="small-12 medium-10 columns">
+            <section class="inner animatedParent" data-appear-top-offset='-300'>
+              <div class="animated fadeInDownShort">
+                <header class="text-center">
+                  <h1 class="title-bottom-border"><img src="image/whatsAceTitle.svg" alt="Whats AceToken"></h1>
+                  <h2>Ethereumのブロックチェーンから発行したデジタル通貨です。</h2>
+                </header>
+                <p>Bitcoinなどで有名なブロックチェーン技術を活用した革新的な商品やサービスはまだまだ世界では誕生していません。しかしこのテクノロジーが、様々なビジネスやシステムの根幹テクノロジーとして世界に普及していくことはインターネットの誕生時以上の成長スピードを見れば、間違いありません。</p>
+                <p><strong>AceToken（エーストークン）</strong>は、Ethereum（イーサリアム）のブロックチェーンから発行されたデジタル通貨です。この通貨はETHと同じ、ユーザが独自に定義した契約(スマートコントラクト)・財産を扱うことができる柔軟性の高いデジタル通貨としての特性を持っています。</p>
+              </div>
+            </section>
+            <section class="row align-center align-middle inner animatedParent" data-appear-top-offset='-300'>
+              <div class="small-6 medium-3 columns text-center animated fadeInLeftShort">
+                <img class="aceTokenThree" src="image/aceTokenThree.svg" alt="AceToken ICO">
+              </div>
+              <div class="small-12 medium-9 columns animated fadeInRightShort">
+                <header>
+                  <h2>次世代の資金調達手段ICOの参加を募っています。</h2>
+                </header>
+                <p>ICO（InitialCoinOffering）とは、新しくデジタル通貨を発行し、それを一般向けに販売することで開発費や研究費などの資金を調達する手段のことを言います。新規に株式を上場し投資家に取得させるIPO（InitialPublicOffering）が一般的な資金の調達手段ですが、デジタル通貨を発行するという点において、ICOは次世代の調達手段と考えられます。</p>
+              </div>
+            </section>
+            <section class="row align-center align-middle inner animatedParent" data-appear-top-offset='-300'>
+              <div class="small-6 medium-3 columns text-center small-order-1 medium-order-2 animated fadeInRightShort">
+                <img class="aceTokenBox" src="image/aceTokenBox.svg" alt="AceToken CryptoStock（クリプトストック：暗号株）">
+              </div>
+              <div class="small-12 medium-9 columns small-order-2 medium-order-1 animated fadeInLeftShort">
+                <header>
+                  <h2>発行企業の事業の発展と成長に合わせて利益を得るデジタル通貨です。</h2>
+                </header>
+                <p>そして、この新しく独自に発行されたデジタル通貨を「Token（トークン）」と呼びます。Tokenは一般的に2種類の性質に分けられます。<strong>基軸通貨型</strong>は、発行企業が提供するサービスの対価として使えるようになる流通タイプのTokenです。<strong>株・証券型</strong>は、発行企業の事業の発展と成長に合わせて、利益を得ることが出来る株に近いタイプのTokenです。AceTokenは、流通を促し世界の基軸通貨となることを目標としたTokenではなく、CrypTradeが開発・提供するサービスの成長に合わせてTokenの価値も上がっていく、<strong>株・証券型のToken＝CryptoStock（クリプトストック：暗号株）</strong>となっています。</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="simpleWallet" class="animatedParent" data-appear-top-offset='-300' data-sequence='500'>
+        <div id="player1"></div>
+        <div class="imgOver purple">
+          <div class="row inner align-center align-middle">
+            <div class="small-12 medium-5 columns animated fadeInLeftShort" data-id='1'>
+              <header>
+                <h1 class="text-center title-bottom-border"><img class="large" src="image/simpleWalletTitle.svg" alt="Simple Wallet"></h1>
+                <h2>CrypTradeはマルチコイン対応のデジタル通貨ウォレットアプリを開発しています。</h2>
+              </header>
+              <p>CrypTradeは、AceTokenを保有できるウォレットアプリ「SimpleWallet」を開発しています。スマートフォンで4種類（Bitcoin/Ethereum/XRP/AceToken）のデジタル通貨を管理・両替・送信できるアプリを提供し、AceTokenの流通を目指します。</p>
+              <ul class="row small-up-2 medium-up-3 circleList">
+                <li class="columns animated fadeInUpShort" data-id='2'>
+                  <div class="roundImage">
+                    <img src="image/currency.jpg" alt="4種類のデジタル通貨">
+                  </div>
+                  <h3>Multi Coin</h3>
+                  <p>4種類のデジタル通貨を全て無料で世界中にいつもで送受金できます。</p>
+                </li>
+                <li class="columns animated fadeInUpShort" data-id='3'>
+                  <div class="roundImage">
+                    <img src="image/Messaging.jpg" alt="デジタル通貨ウォレットでメッセージ機能">
+                  </div>
+                  <h3>Messaging</h3>
+                  <p>Emailや電話番号で送金できます。また、メッセージや画像を一緒に添付送信できます</p>
+                </li>
+                <li class="columns animated fadeInUpShort" data-id='4'>
+                  <div class="roundImage">
+                    <img src="image/touchId.jpg" alt="デジタル通貨ウォレットでTouchID">
+                  </div>
+                  <h3>TouchID</h3>
+                  <p>生体認証を使ったTouchIDと認証コードで資産を不正なアクセスからロックします。</p>
+                </li>
+              </ul>
+            </div>
+            <div class="small-8 medium-3 columns phone animated fadeInRightShort" data-id='5'>
+              <img class="smartPhone" src="image/smartPhone.svg" alt="">
+              <a class="smartView" data-open="smartViewModal">
+                <div class="smartViewContent">
+                  <div class="responsive-embed widescreen">
+                    <div id="player2"></div>
+                  </div>
+                  <img class="simpleView" src="image/simpleView.svg" alt="">
+                  <div class="simpleView smartHover">
+                    <div class="row align-center align-middle text-center">
+                      <div class="small-11 columns">
+                        <div class="row align-center">
+                          <div class="small-5 columns">
+                            <img src="image/simpleWalletLogo.svg" alt="Simple Wallet Logo">
+                          </div>
+                        </div>
+                        <p>Simple Wallet<br>の動画を見る</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="small-4 medium-2 columns text-center animated fadeInRightShort" data-id='6'>
+              <a class="smartView" data-open="smartViewModal">
+                <div class="title-bottom-border">
+                  <img class="icon" src="image/simpleWalletLogo.svg" alt="Simple Wallet Logo">
+                </div>
+                <h3>Click Here!<br>Watch Video</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal -->
+      <div class="reveal large" id="smartViewModal" data-reveal>
+        <div class="responsive-embed widescreen">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NE6Ra_3FJqw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row align-center">
+          <div class="small-6 columns">
+            <a class="button expanded" data-close aria-label="Close modal">閉じる</a>
+          </div>
+        </div>
+      </div>
+
+      <section id="smartContract" class="inner bgGlay animatedParent" data-appear-top-offset='-300'>
+        <div class="row align-center">
+          <div class="small-12 medium-9 columns animated fadeInDownShort">
+            <header class="text-center">
+              <h2>スマートコントラクトの特性を持ったTokenなので、<br>無駄なプロセスを踏まずスマートに取引が可能です。</h2>
+            </header>
+            <p>AceTokenは、Ethereumのブロックチェーンを通して直接個人間でのやり取りが可能です。無駄な契約プロセスや権利の譲渡、移転の手続きを踏まずに、契約（スマートコントラクト）取引ができます。</p>
+          </div>
+          <div class="small-6 medium-12 large-9 columns text-center animated fadeInUpShort">
+            <ul class="row small-up-1 medium-up-5 circleList">
+              <li class="columns">
+                <div class="roundImage">
+                  <img src="image/user1.jpg" alt="AceTokenを送信するユーザー">
+                  <div class="roundHover">
+                    <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                    <p>送信</p>
+                  </div>
+                </div>
+                <h3>User</h3>
+              </li>
+              <li class="columns">
+                <div class="row align-middle collapse">
+                  <div class="small-12 medium-9 columns">
+                    <p class="textBox purple">合意</p>
+                    <p class="textBox purple">契約の自動履行</p>
+                    <p class="textBox show-for-small-only">AceTokenの送信</p>
+                  </div>
+                  <div class="small-12 medium-3 columns">
+                    <img class="arrowCross" src="image/arrowCross2.svg" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="columns">
+                <div class="roundImage">
+                  <img src="image/smartContract.svg" alt="契約（スマートコントラクト）">
+                </div>
+                <h3>SmartContract</h3>
+              </li>
+              <li class="columns">
+                <div class="row align-middle collapse">
+                  <div class="small-12 medium-3 columns">
+                    <img class="arrowCross" src="image/arrowCross.svg" alt="">
+                  </div>
+                  <div class="small-12 medium-9 columns">
+                    <p class="textBox purple">合意</p>
+                    <p class="textBox purple">契約の自動履行</p>
+                    <p class="textBox show-for-small-only">AceTokenの受取</p>
+                  </div>
+                </div>
+              </li>
+              <li class="columns">
+                <div class="roundImage">
+                  <img src="image/user2.jpg" alt="AceTokenを受け取るユーザー">
+                  <div class="roundHover">
+                    <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                    <p>受取</p>
+                  </div>
+                </div>
+                <h3>User</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="liquidity" class="animatedParent" data-appear-top-offset='-300' data-sequence='500'>
+        <div class="row inner align-center">
+          <div class="small-12 medium-10 columns animated fadeInDownShort" data-id='1'>
+            <header class="text-center">
+              <h1 class="title-bottom-border"><img class="large" src="image/liquidityTitle.svg" alt="Liquidity"></h1>
+              <h2>AceTokenは発行企業の事業の発展と成長に合わせて利益を得るデジタル通貨です。</h2>
+            </header>
+            <p>現在世界におけるFintech関連の市場は20兆ドル市場とも言われており、ブロックチェーン技術の開発予算はもっとも大きなシェアを占めています。CrypTradeは自社プロジェクトに限らず、ブロックチェーン技術開発を必要とする企業や団体からの開発依頼に対しても、積極的に協力し技術提供をしていきます。その際、開発費用の一部をAceTokenで支払ってもらうことにより、技術開発によるCrypTradeの企業価値の上昇と、法人顧客相手のビジネス：BtoBによるAceTokenの流動性を高めます。</p>
+          </div>
+          <div class="small-12 medium-10 columns">
+            <ul class="row small-up-2 medium-up-5 circleList circleList-arrow">
+              <li class="columns animated fadeInUpShort" data-id='2'>
+                <div class="arrowIcon">
+                  <div class="roundImage">
+                    <img src="image/user1.jpg" alt="ユーザー">
+                    <div class="roundHover">
+                      <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                      <p>売買</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>User</h3>
+                <p>ユーザー様はSimpleWalletと取引所でAceTokenを取引、売買が自由に行えます。</p>
+              </li>
+              <li class="columns animated fadeInUpShort" data-id='3'>
+                <div class=" arrowIcon small-arrowTop small-notArrow">
+                  <div class="roundImage">
+                    <img src="image/user2.jpg" alt="ユーザー">
+                    <div class="roundHover">
+                      <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                      <p>保有</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>User</h3>
+                <p>ICO期間にCrypTradeからAceTokenを購入いただけます。SimpleWalletで保有いただけます。</p>
+              </li>
+              <li class="columns animated fadeInUpShort" data-id='4'>
+                <div class="arrowIcon small-arrowTop small-arrowRight">
+                  <div class="roundImage">
+                    <img src="image/CrypTrade.svg" alt="株式会社CrypTrade（クリプトレード）">
+                    <div class="roundHover">
+                      <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                      <p>発行</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>CrypTrade</h3>
+                <p>企業・取引所・ユーザーにAceTokenを請求、発行、売却します。</p>
+              </li>
+              <li class="columns animated fadeInUpShort" data-id='5'>
+                <div class="arrowIcon small-arrowTop">
+                  <div class="roundImage">
+                    <img src="image/exchange.jpg" alt="取引所">
+                    <div class="roundHover">
+                      <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                      <p>取引</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Exchange</h3>
+                <p>AceTokenを取り扱う取引所で売買できるようになります。</p>
+              </li>
+              <li class="columns animated fadeInUpShort" data-id='6'>
+                <div class="arrowIcon small-arrowTop medium-notArrow">
+                  <div class="roundImage">
+                    <img src="image/company.jpg" alt="企業">
+                    <div class="roundHover">
+                      <img class="aceTokenIcon" src="image/aceTokenLogoWhite.svg" alt="AceToken logo">
+                      <p>支払</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Company</h3>
+                <p>企業様からCrypTradeに開発依頼をする際に、AceTokenで一部支払いただけます。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="preSalePeriod" class="animatedParent" data-appear-top-offset='-300' data-sequence='500'>
+        <div class="row expanded inner align-center">
+          <div class="small-12 medium-10 large-7 columns animated fadeInDownShort" data-id='1'>
+            <header class="text-center">
+              <h1 class="title-bottom-border"><img src="image/preSaleTitle.svg" alt="Pre-Sale Period"></h1>
+              <h2>AceTokenの総発行数は１億ACEです。</h2>
+            </header>
+            <p>より早くこのプロジェクトへ参加した全ての人へ、平等なチャンスと機会を提供します。AceTokenはトレンド・ニーズ・技術の向上・プロジェクトの発展・サービスの成長により日々その価値が高まっていきます。また、開発フェーズ（段階）により日々高まっていきます。</p>
+            <p class="text-center">
+              <span class="fontColorY">交換レート</span><br>
+              <span class="fontColorW">AceToken発行数</span><br>
+              <span class="fontColorP">販売休止期間</span>
+            </p>
+          </div>
+        </div>
+        <ol class="row collapse small-up-1 medium-up-1 large-up-5 preInfo">
+          <li id="pre1" class="columns animated fadeInDownShort" data-id='2'>
+            <span class="preBg hide-for-small-only hide-for-medium-only">
+              <img src="image/chartBg.svg" alt="">
+            </span>
+            <span class="preChart hide-for-small-only hide-for-medium-only">
+              <img src="image/chart1.svg" alt="">
+            </span>
+            <dl class="title-bottom-border">
+              <dt>
+                第1期<br>
+                2017.<span>3.19</span>日&nbsp;-&nbsp;<span>5.9</span>火(52日間)
+              </dt>
+              <dd>12,000 ACE / BTC</dd>
+              <dd>1,000 万ACE</dd>
+              <dd>5.10 - 5.25(16日間)</dd>
+            </dl>
+            <ul>
+              <li>2016.10 プロジェクト開始</li>
+              <li>2016.11 Pre-ICO開始</li>
+              <li>SimpleWallet β版公開</li>
+            </ul>
+          </li>
+          <li id="pre2" class="columns animated fadeInDownShort" data-id='3'>
+            <span class="preBg hide-for-small-only hide-for-medium-only">
+              <img src="image/chartBg.svg" alt="">
+            </span>
+            <span class="preChart hide-for-small-only hide-for-medium-only">
+              <img src="image/chart2.svg" alt="">
+            </span>
+            <dl>
+              <dt>
+                第2期<br>
+                <span>5.26</span>金&nbsp;-&nbsp;<span>7.16</span>日(52日間)
+              </dt>
+              <dd>11,000 ACE / BTC</dd>
+              <dd>1,500 万ACE</dd>
+              <dd>7.17 - 8.2(17日間)</dd>
+            </dl>
+          </li>
+          <li id="pre3" class="columns animated fadeInDownShort" data-id='4'>
+            <span class="preBg hide-for-small-only hide-for-medium-only">
+              <img src="image/chartBg.svg" alt="">
+            </span>
+            <span class="preChart hide-for-small-only hide-for-medium-only">
+              <img src="image/chart3.svg" alt="">
+            </span>
+            <dl>
+              <dt>
+                第3期<br>
+                <span>8.3</span>木&nbsp;-&nbsp;<span>10.9</span>月(52日間)
+              </dt>
+              <dd>9,000 ACE / BTC</dd>
+              <dd>2,200 万ACE</dd>
+              <dd>10.10 - 10.24(15日間)</dd>
+            </dl>
+          </li>
+          <li id="pre4" class="columns animated fadeInDownShort" data-id='5'>
+            <span class="preBg hide-for-small-only hide-for-medium-only">
+              <img src="image/chartBg.svg" alt="">
+            </span>
+            <span class="preChart hide-for-small-only hide-for-medium-only">
+              <img src="image/chart4.svg" alt="">
+            </span>
+            <dl>
+              <dt>
+                第4期<br>
+                <span>10.25</span>水&nbsp;-&nbsp;<span>12.31</span>日(68日間)
+              </dt>
+              <dd>8,500 ACE / BTC</dd>
+              <dd>2,500 万ACE</dd>
+              <dd>2018.1.1 - 1.16(16日間)</dd>
+            </dl>
+          </li>
+          <li id="pre5" class="columns animated fadeInDownShort" data-id='6'>
+            <span class="preBg hide-for-small-only hide-for-medium-only">
+              <img src="image/chartBg.svg" alt="">
+            </span>
+            <span class="preChart hide-for-small-only hide-for-medium-only">
+              <img src="image/chart5.svg" alt="">
+            </span>
+            <dl class="title-bottom-border">
+              <dt>
+                第5期<br>
+                2018.<span>1.17</span>水&nbsp;-&nbsp;<span>3.20</span>火(63日間)
+              </dt>
+              <dd>8,000 ACE / BTC</dd>
+              <dd>2,800 万ACE</dd>
+            </dl>
+            <ul>
+              <li>3.21 AceToken 公開</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section id="entryIco" class="inner bgGlay animatedParent" data-appear-top-offset='-300'>
+        <div class="row align-center animated fadeInDownShort">
+          <div class="small-12 medium-7 columns text-center">
+            <h2>PC、スマートフォンさえあれば<br>世界中からAceTokenのICOに参加できます。</h2>
+            <p>AceToken交換サイトにアクセス後、まずはアカウントを作成してください。アカウントの作成はメールアドレスさえあれば登録が完了します。購入（交換）申し込みをするとすぐにAceTokenが購入（交換）完了します。</p>
+          </div>
+        </div>
+        <div class="row align-center animated fadeInUpShort">
+          <div class="small-10 medium-4 large-3 columns">
+            <a class="button expanded" href="www.sales.acetoken.io">ICOに参加する</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="animatedParent" data-appear-top-offset='-300'>
+        <div class="imgOver inner large">
+          <div class="row align-center animated fadeInDownShort">
+            <div class="small-12 medium-7 columns">
+              <header class="text-center">
+                <h1 class="title-bottom-border"><img src="image/contactsTitle.svg" alt="Contacts"></h1>
+                <h2>AceTokenに関するお問い合わせはこちら</h2>
+              </header>
+              <p>AceTokenに関するご質問を受け付けております。メールにてお気軽にご連絡ください。お時間をいただく場合もございますが、後ほど担当者よりご連絡させていただきます。</p>
+            </div>
+          </div>
+          <div class="row align-center animated fadeInUpShort">
+            <div class="small-10 medium-4 large-3 columns">
+              <a class="button expanded" href="mailto:support@cryptrade.net?subject=%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b%20%2d%20AceToken%2d&amp;body=AceToken%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b%e3%83%a1%e3%83%bc%e3%83%ab%0d%0aAceToken%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f%e3%82%92%e5%8f%97%e3%81%91%e4%bb%98%e3%81%91%e3%81%a6%e3%81%8a%e3%82%8a%e3%81%be%e3%81%99%e3%80%82%e3%81%8a%e6%99%82%e9%96%93%e3%82%92%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8f%e5%a0%b4%e5%90%88%e3%82%82%e3%81%94%e3%81%96%e3%81%84%e3%81%be%e3%81%99%e3%81%8c%e3%80%81%e5%be%8c%e3%81%bb%e3%81%a9%e6%8b%85%e5%bd%93%e8%80%85%e3%82%88%e3%82%8a%e3%81%94%e9%80%a3%e7%b5%a1%e3%81%95%e3%81%9b%e3%81%a6%e3%81%84%e3%81%9f%e3%81%a0%e3%81%8d%e3%81%be%e3%81%99%e3%80%82%0d%0a%e4%b8%8b%e8%a8%98%e9%a0%85%e7%9b%ae%e3%82%92%e3%81%94%e8%a8%98%e5%85%a5%e3%81%ae%e4%b8%8a%e3%80%81%e9%80%81%e4%bf%a1%e3%81%97%e3%81%a6%e3%81%8f%e3%81%a0%e3%81%95%e3%81%84%e3%80%82%0d%0a%e3%81%8a%e5%90%8d%e5%89%8d%ef%bc%9a%0d%0a%e3%83%a1%e3%83%83%e3%82%bb%e3%83%bc%e3%82%b8%ef%bc%9a%0d%0a%0d%0a%2d%2d%2d%2d%2d%0d%0a%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%beCrypTrade%0d%0a80%2d83%20Long%20Lane%20London%20EC1A%209ET%20UK%0d%0a%2b123%20456%207890%0d%0asupport%40cryptrade%2enet">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="row inner">
+        <adress class="small-12 medium-4 small-order-1 medium-order-2 columns small-mb">
+          <h5><img src="image/CrypTradeOnly.svg" alt="CrypTrade Logo"> <a href="http://www.cryptrade.net/" target="_blank">CrypTrade.Ltd</a></h5>
+          <p>80-83 Long Lane London EC1A 9ET UK</p>
+          <p>+123 456 7890</p>
+          <p>support@cryptrade.net</p>
+        </adress>
+        <div class="small-12 medium-4 small-order-2 medium-order-3 columns small-mb">
+          <h5><img src="image/simpleWalletLogo.svg" alt="Simple Wallet Logo"> <a href="http://simple-wallet.com/" target="_blank">Simple Wallet</a></h5>
+          <p>デジタル通貨をもっと身近に。世界中に。<br>ポケットの中に。複数の通貨を一つに。<br>マルチコイン対応デジタル通貨ウォレット</p>
+        </div>
+        <div class="small-12 medium-4 small-order-3 medium-order-1 columns text-center small-mb">
+          <img class="aceTokenIcon" src="image/aceTokenLogo.svg" alt="AceToken logo">
+          <p><small>&copy; 2016 CrypTrade Ltd</small></p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="bower_components/css3-animate-it/js/css3-animate-it.js"></script>
+  </body>
+</html>

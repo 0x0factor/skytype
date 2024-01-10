@@ -1,0 +1,53 @@
+@transition-slow: 1.5s;
+@transition-slower: 2s;
+@transition-slowest: 3s;
+
+.animated {
+  .transition;
+}
+
+.slow {
+  .transition( @transition-slow );
+}
+
+.slower {
+  .transition( @transition-slow );
+}
+
+.slowest {
+  .transition( @transition-slow );
+}
+
+/*********
+* Mixins *
+*********/
+
+@import "mixins/transform";
+@import "mixins/transition";
+@import "mixins/translate";
+@import "mixins/opacity";
+
+/*************
+* Animations *
+*************/
+
+@import "animations/bounce-in";
+@import "animations/bounce-out";
+@import "animations/fade-in";
+@import "animations/fade-out";
+@import "animations/fade-in-short";
+@import "animations/flip-in";
+@import "animations/flip-out";
+@import "animations/grow";
+@import "animations/light-speed-in";
+@import "animations/light-speed-out";
+@import "animations/pulse";
+@import "animations/roll-in";
+@import "animations/roll-out";
+@import "animations/rotate-in";
+@import "animations/rotate-out";
+@import "animations/shake";
+@import "animations/swing";
+@import "animations/tada";
+@import "animations/wiggle";
+@import "animations/wobble";

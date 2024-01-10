@@ -1,0 +1,59 @@
+/************
+* lightSpeedOutRight *
+*************/
+
+.lightSpeedOutRight-frames() {
+  0% {
+    .translateX( 0% );
+    .skewX( 0deg );
+    .opacity( 1 );
+  }
+  100% {
+    .translateX( 100% );
+    .skewX( -30deg );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes lightSpeedOutRight {
+  .lightSpeedOutRight-frames;
+}
+
+@keyframes lightSpeedOutRight {
+  .lightSpeedOutRight-frames;
+}
+
+.lightSpeedOutRight.go {
+  .animation( lightSpeedOutRight );
+  .animation-timing( ease-in );
+}
+
+/************
+* lightSpeedOutLeft *
+*************/
+
+.lightSpeedOutLeft-frames() {
+  0% {
+    .translateX( 0% );
+    .skewX( 0deg );
+    .opacity( 1 );
+  }
+  100% {
+    .translateX( -100% );
+    .skewX( 30deg );
+    .opacity;
+  }
+}
+
+@-webkit-keyframes lightSpeedOutLeft {
+  .lightSpeedOutLeft-frames;
+}
+
+@keyframes lightSpeedOutLeft {
+  .lightSpeedOutLeft-frames;
+}
+
+.lightSpeedOutLeft.go {
+  .animation( lightSpeedOutLeft );
+  .animation-timing( ease-in );
+}

@@ -1,0 +1,32 @@
+.rollIn {
+  .opacity;
+}
+
+/*********
+* rollIn *
+**********/
+
+.rollIn-frames() {
+  0% {
+    .rotate( -120deg );
+    .translateX( -100% );
+    .opacity;
+  }
+  100% {
+    .rotate( 0 );
+    .translateX( 0 );
+    .opacity( 1 );
+  }
+}
+
+@-webkit-keyframes rollIn {
+  .rollIn-frames;
+}
+
+@keyframes rollIn {
+  .rollIn-frames;
+}
+
+.rollIn.go {
+  .animation( rollIn );
+}
