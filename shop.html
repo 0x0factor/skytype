@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js">
+<html lang="en">
 
 <head>
   <!-- Meta Tags -->
@@ -61,8 +61,9 @@
   <link rel="apple-touch-icon" sizes="72x72" href="#" />
   <link rel="apple-touch-icon" sizes="144x144" href="#" />
 
-  <link href="_include/img/favicon.ico" rel="icon" />
-  <link href="_include/img/favicon.ico" rel="apple-touch-icon" />
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon" />
+  <link href="img/favicon.ico" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link
@@ -70,12 +71,12 @@
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
@@ -89,7 +90,26 @@
 ======================================================== -->
 
   <!-- Modernizr -->
-  
+  <script src="_include/js/modernizr.js"></script>
+
+  <!-- Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "Insert Your Code"]);
+    _gaq.push(["_trackPageview"]);
+
+    (function () {
+      var ga = document.createElement("script");
+      ga.type = "text/javascript";
+      ga.async = true;
+      ga.src =
+        ("https:" == document.location.protocol ?
+          "https://ssl" :
+          "http://www") + ".google-analytics.com/ga.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 
 <body>
