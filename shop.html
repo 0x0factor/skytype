@@ -106,6 +106,8 @@
 </head>
 
 <body>
+  <canvas id="my" class="body-change" width="1920px" height="1080px" style="width: 100%; height: 100vh;"></canvas>
+
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -406,6 +408,59 @@
 
             <!-- Template Main JS File -->
             <script src="assets/js/main.js"></script>
+            <script>
+              const mycanvas = document.getElementById("my");
+              const ctx = mycanvas.getContext("2d");
+          
+              const cnt = 500, x = [], y = [], vx = [], vy = [], w = 1920, h = 1080, r = 3;
+          
+              const init = () => {
+                  for (let i = 0; i < cnt; i++) {
+                      x[i] = Math.random() * w;
+                      y[i] = Math.random() * h;
+                      vx[i] = (0.5 - Math.random()) * 5;
+                      vy[i] = (0.5 - Math.random()) * 5;
+                  }
+              }
+          
+              init();
+          
+              const draw = () => {
+                  ctx.clearRect(0, 0, w, h);
+                  for (let i = 0; i < cnt; i++) {
+                      x[i] += vx[i];
+                      y[i] += vy[i];
+                      if (x[i] <= 0 || x[i] >= w) vx[i] = -vx[i];
+                      if (y[i] <= 0 || y[i] >= h) vy[i] = -vy[i];
+          
+                      ctx.beginPath();
+          
+                      ctx.fillStyle = "#ffffff88"
+                      ctx.strokeStyle = "#ffffff22"
+                      ctx.arc(x[i], y[i], r, 0, 2 * Math.PI);
+                      ctx.fill();
+          
+                      for (let j = 0; j < cnt; j++) {
+                          if ((x[i] - x[j]) * (x[i] - x[j]) + (y[i] - y[j]) * (y[i] - y[j]) <= 6000) {
+                              if ((x[i] - x[j]) * (x[i] - x[j]) + (y[i] - y[j]) * (y[i] - y[j]) <= 36) {
+                                  vx[i] = -vx[i];
+                                  vy[i] = -vy[i];
+                                  vy[j] = -vy[j];
+                                  vx[j] = -vx[j];
+                              } else {
+                                  ctx.beginPath();
+                                  ctx.moveTo(x[i], y[i]);
+                                  ctx.lineTo(x[j], y[j]);
+                                  ctx.lineWidth = 0.5;
+                                  ctx.stroke();
+                              }
+                          }
+                      }
+                  }
+              }
+              
+              setInterval(draw, 25);
+          </script>
 </body>
 
 </html>
