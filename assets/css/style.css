@@ -258,7 +258,44 @@ h6 {
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
+#hero-shop:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 
+#hero-shop .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero-shop h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero-shop p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero-shop p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
@@ -817,7 +854,7 @@ section {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: red;
   margin: 0;
 }
 
@@ -1196,4 +1233,8 @@ section {
 }
 .top-change{
   position: fixed;
+}
+.container-me {
+  padding-left: 50vh;
+  padding-right: 50vh;
 }
