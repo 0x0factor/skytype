@@ -1234,7 +1234,41 @@ section {
 .top-change{
   position: fixed;
 }
-.container-me {
-  padding-left: 50vh;
-  padding-right: 50vh;
+/* .container-me {
+  padding-left: 30px;
+  padding-right: 30px;
+} */
+
+.news-intro {
+  color: white;
+  background-color: #d9534f;
+  padding: 2px;
+  border-radius: 5px;
+}
+.display-inline{
+  display: inline-block;
+  width: 25%;
+}
+.display-inline-input{
+  display: inline-block;
+  width: 70%;
+}
+.height-100 {
+  height: 100% !important;
+}
+
+.flex-center {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 0 !important;
+}
+
+.background-img {
+  background-color: white !important;
+  padding: 50px 20px !important;
+  border-radius: 40px !important;
+  margin: 10px 20px !important;
+}
+.col-lg-4-again{
+  width: 30% !important;
 }
