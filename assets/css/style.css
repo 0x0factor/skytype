@@ -271,8 +271,8 @@ h6 {
 
 #hero-shop .hero-container {
   position: relative;
-  z-index: 2;
-  min-width: 300px;
+  min-width: 0px;
+  margin: 0 10px;
 }
 
 #hero-shop h1 {
@@ -310,7 +310,8 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  min-width: 0px;
+  margin: 0 10px;
 }
 
 #hero h1 {
@@ -389,9 +390,27 @@ section {
   position: relative;
   color: #173b6c;
 }
+.new-title {
+ 
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+
+}
+.new-btn {
+  color: white;
+  background-color: #d9534f;
+    /* margin: 0px; */
+    padding: 5px;
+    border-radius: 5px;
+
+}
 .img-change{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 30px;
   
 }
@@ -1267,8 +1286,12 @@ section {
   background-color: white !important;
   padding: 50px 20px !important;
   border-radius: 40px !important;
-  margin: 10px 20px !important;
-}
+  margin: 10px -1xpx !important;
+  scale: 0.9;
+} 
 .col-lg-4-again{
-  width: 30% !important;
+  width: 25% !important;
+}
+.new-size-change {
+  text-align: center;
 }
